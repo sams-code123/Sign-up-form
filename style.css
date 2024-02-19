@@ -25,9 +25,11 @@ main {
 .leftbox {
     width: 37%;
     height: 100%;
-    /* border:  2px solid blue; */
-    background-image: url(./ferns.png);
+    background: url(./ferns.png);
+    overflow: hidden;
+    background-repeat: none;
 }
+
 
 .rightbox {
     height: 100%;
@@ -38,19 +40,19 @@ main {
 }
 
 .logo {
-    background-color: black;
-    opacity: .5;
+    background-color: white;
+    opacity: .9;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 5rem;
+    margin-top: 10rem;
     height: 5rem;
     position: relative;
 }
 
 .texts {
-    color: white;
+    color: black;
     font-size: 2.5rem;
     text-align: center;
     width: 60%;
@@ -64,10 +66,10 @@ main {
     gap: 1rem;
 }
 
-img {
-    height: 4rem;
+.leftbox div img {
+    height: 5rem;
     position: relative;
-    bottom: 12.5rem;
+    bottom: 13rem;
     left: 14.5rem;
 }
 
@@ -88,6 +90,9 @@ img {
     padding: 2rem;
     display: flex;
     flex-direction: row;
+    width: 100%;
+    padding-left: 3rem;
+    /* border: 2px solid pink; */
 }
 
 .middle form {
@@ -95,6 +100,9 @@ img {
     flex-direction: row;
     justify-content: center;
     gap: 2rem;
+    flex-wrap: wrap;
+    /* border: 2px solid blue; */
+    width: 80%;
     
 }
 .middle input {
@@ -105,7 +113,7 @@ img {
     display: flex;
     flex-direction: column;
     justify-content: left;
-    width: 60%;
+    width: 46%;
     /* border: 2px solid pink; */
 }
 
@@ -115,3 +123,16 @@ img {
     left: 1rem;
     font-family: "Cabin", sans-serif;
 }
+
+input:focus {
+    box-shadow: 5px 5px 5px black;
+}
+
+button {
+    height: 2rem;
+    width: 7rem;
+    border-radius: .4rem;
+    margin-right: 10rem;
+    margin-left: 10rem;
+}
+
